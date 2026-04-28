@@ -1,0 +1,12 @@
+{
+  "id": "inner-space",
+  "title": "Inner Space",
+  "date": "2018",
+  "collaboration": "Bud Blumenthal",
+  "description": "Dance performance with volumetric silhouette and particle system.",
+  "longDescription": "Kinect volumetric processing / Realtime particle system driven by dancer silhouette / Projection mapping.",
+  "technologies": ["MaxMSP", "Jitter", "Kinect"],
+  "links": {},
+  "image": "images/projects/inner-space.jpg",
+  "thumbnail": "images/projects/thumbs/inner-space-thumb.jpg"
+}

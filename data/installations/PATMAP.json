@@ -1,0 +1,14 @@
+{
+  "id": "patmap",
+  "title": "PATMAP",
+  "date": "2012",
+  "collaboration": "Marcio Ambrosio",
+  "description": "Interactive sculpture with iPad controller.",
+  "longDescription": "Controller in OpenFrameworks / Arduino piezo array / MaxMSP-Jitter grid system / MadMapper.",
+  "technologies": ["OpenFrameworks", "Arduino", "MaxMSP", "MadMapper"],
+  "links": {
+    "youtube": "https://www.youtube.com/watch?v=hAMke8dFTz4"
+  },
+  "image": "images/projects/patmap.jpg",
+  "thumbnail": "images/projects/thumbs/patmap-thumb.jpg"
+}

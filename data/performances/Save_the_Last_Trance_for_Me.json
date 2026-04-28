@@ -1,0 +1,14 @@
+{
+  "id": "save-the-last-trance-for-me",
+  "title": "Save the Last Trance for Me",
+  "date": "2018",
+  "collaboration": "Matthaei & Konsorten",
+  "description": "Audio visual performance with Kinect-tracked torch mapping.",
+  "longDescription": "Dedicated video player in MaxMSP/Jitter and Ableton LIVE / Editable cues for playback triggers & smooth transitions / Editable video effect chains using pixel shaders inside MaxForLive modules / Kinect tracking a lamp torch and mapping of its position to the screens.",
+  "technologies": ["MaxMSP", "Jitter", "Ableton Live", "Kinect"],
+  "links": {
+    "vimeo": "https://vimeo.com/297064485"
+  },
+  "image": "images/projects/save-the-last-trance-for-me.jpg",
+  "thumbnail": "images/projects/thumbs/save-the-last-trance-for-me-thumb.jpg"
+}

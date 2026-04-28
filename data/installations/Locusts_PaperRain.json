@@ -1,0 +1,14 @@
+{
+  "id": "locusts-paper-rain",
+  "title": "Locusts / paperRain",
+  "date": "2021",
+  "collaboration": "George Van Dam and Various Artists",
+  "description": "Interactive audio-video installation with music boxes.",
+  "longDescription": "Dedicated Audio-Video player developed in MaxMSP / Interpretation of the output of 8 music boxes via piezos microphones / Interactive playback of an explosive video sequence and a quadraphonic soundtrack.",
+  "technologies": ["MaxMSP", "Jitter"],
+  "links": {
+    "blog": "https://various-artists-0v2g.squarespace.com/locusts"
+  },
+  "image": "images/projects/locusts-paper-rain.jpg",
+  "thumbnail": "images/projects/thumbs/locusts-paper-rain-thumb.jpg"
+}

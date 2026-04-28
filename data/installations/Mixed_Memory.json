@@ -1,0 +1,14 @@
+{
+  "id": "mixed-memory",
+  "title": "Mixed Memory",
+  "date": "2011",
+  "collaboration": "Julien Maire",
+  "description": "Multi-media installation with moving mirrors.",
+  "longDescription": "Dedicated softwares in MaxMSP-Jitter for looped score with moving mirrors interfering with projected film.",
+  "technologies": ["MaxMSP", "Jitter"],
+  "links": {
+    "blog": "https://julienmaire.blogspot.com/2011/06/here-is-online-documentation-from-my.html"
+  },
+  "image": "images/projects/mixed-memory.jpg",
+  "thumbnail": "images/projects/thumbs/mixed-memory-thumb.jpg"
+}

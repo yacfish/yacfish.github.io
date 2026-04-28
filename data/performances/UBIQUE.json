@@ -1,0 +1,14 @@
+{
+  "id": "ubique",
+  "title": "UBIQUE",
+  "date": "2016",
+  "collaboration": "Ethnophonics / Singkhéo Panya",
+  "description": "Ciné-Concert with multichannel video and percussive control.",
+  "longDescription": "Dedicated multi-channel video player in MaxMSP/Jitter and Ableton LIVE / Editable cues and pixel shader effects / Fast video sampling from MIDI controller.",
+  "technologies": ["MaxMSP", "Jitter", "Ableton Live"],
+  "links": {
+    "youtube": "https://www.youtube.com/watch?v=pQWGtWnpyrQ"
+  },
+  "image": "images/projects/ubique.jpg",
+  "thumbnail": "images/projects/thumbs/ubique-thumb.jpg"
+}

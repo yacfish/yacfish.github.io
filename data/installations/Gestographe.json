@@ -1,0 +1,14 @@
+{
+  "id": "gestographe",
+  "title": "Gestographe",
+  "date": "2013",
+  "collaboration": "Fred Chemama",
+  "description": "Interactive photographic installation with body drawing.",
+  "longDescription": "Dedicated capture software in MaxMSP-Jitter with accumulation effect / Real-time projection and printing.",
+  "technologies": ["MaxMSP", "Jitter"],
+  "links": {
+    "youtube": "https://www.youtube.com/watch?v=TNBotIDTLyE"
+  },
+  "image": "images/projects/gestographe.jpg",
+  "thumbnail": "images/projects/thumbs/gestographe-thumb.jpg"
+}

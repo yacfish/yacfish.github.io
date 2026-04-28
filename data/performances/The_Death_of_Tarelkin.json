@@ -1,0 +1,14 @@
+{
+  "id": "the-death-of-tarelkin",
+  "title": "The Death of Tarelkin",
+  "date": "2014",
+  "collaboration": "Alexandra Dementieva & MediaArtLab Moscow",
+  "description": "Dance performance with multi-screen video mixing.",
+  "longDescription": "Software in MaxMSP-Jitter controlling video playback and live cameras on seven screens with cues and smooth transitions.",
+  "technologies": ["MaxMSP", "Jitter"],
+  "links": {
+    "vimeo": "https://vimeo.com/109066574"
+  },
+  "image": "images/projects/the-death-of-tarelkin.jpg",
+  "thumbnail": "images/projects/thumbs/the-death-of-tarelkin-thumb.jpg"
+}

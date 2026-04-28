@@ -1,0 +1,14 @@
+{
+  "id": "moviola",
+  "title": "Moviola",
+  "date": "2015",
+  "collaboration": "Marcio Ambrosio",
+  "description": "Interactive multi-media sculpture with 3D engine.",
+  "longDescription": "Custom interactive 3d engine in MaxMSP-Jitter / Arduino shield for IR sensors / MadMapper projection mapping.",
+  "technologies": ["MaxMSP", "Jitter", "Arduino", "MadMapper"],
+  "links": {
+    "youtube": "https://www.youtube.com/watch?v=dm05CBiqTFY"
+  },
+  "image": "images/projects/moviola.jpg",
+  "thumbnail": "images/projects/thumbs/moviola-thumb.jpg"
+}

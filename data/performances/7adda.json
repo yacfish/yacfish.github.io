@@ -1,0 +1,14 @@
+{
+  "id": "7adda",
+  "title": "7adda",
+  "date": "2013",
+  "collaboration": "Jaouad Essounani",
+  "description": "Theatrical performance with realtime silhouette sampler.",
+  "longDescription": "Realtime white silhouette using Kinect / Video sampler with accumulation / Cued DMX lighting controls.",
+  "technologies": ["MaxMSP", "Jitter", "Kinect"],
+  "links": {
+    "youtube": "https://www.youtube.com/watch?v=erqi6bPbsF4"
+  },
+  "image": "images/projects/7adda.jpg",
+  "thumbnail": "images/projects/thumbs/7adda-thumb.jpg"
+}

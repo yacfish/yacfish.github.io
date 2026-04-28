@@ -1,0 +1,14 @@
+{
+  "id": "oups",
+  "title": "Oups!",
+  "date": "2007",
+  "collaboration": "Marcio Ambrosio",
+  "description": "Motion tracking interactive video installation.",
+  "longDescription": "MaxMSP-Jitter engine using silhouette analysis / Modular scene system with alpha and sound files.",
+  "technologies": ["MaxMSP", "Jitter"],
+  "links": {
+    "vimeo": "https://vimeo.com/3208200"
+  },
+  "image": "images/projects/oups.jpg",
+  "thumbnail": "images/projects/thumbs/oups-thumb.jpg"
+}

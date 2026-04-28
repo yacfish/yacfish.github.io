@@ -1,0 +1,14 @@
+{
+  "id": "12i",
+  "title": "12i",
+  "date": "2011",
+  "collaboration": "Marcio Ambrosio",
+  "description": "Interactive animation loop recording installation.",
+  "longDescription": "Kinect guided recording / iPad remote control / MaxMSP-Jitter playback and mapping.",
+  "technologies": ["MaxMSP", "Jitter", "Kinect", "OpenFrameworks"],
+  "links": {
+    "youtube": "https://www.youtube.com/watch?v=F-pikRo4kqU"
+  },
+  "image": "images/projects/12i.jpg",
+  "thumbnail": "images/projects/thumbs/12i-thumb.jpg"
+}

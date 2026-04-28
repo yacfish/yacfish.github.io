@@ -1,0 +1,14 @@
+{
+  "id": "early-works",
+  "title": "Early Works",
+  "date": "2004",
+  "collaboration": "iMAL Arts Center",
+  "description": "Collection of first interactive video installations.",
+  "longDescription": "Early interactive video works developed in MaxMSP at iMAL.",
+  "technologies": ["MaxMSP"],
+  "links": {
+    "web": "https://legacy.imal.org/yacine/"
+  },
+  "image": "images/projects/early-works.jpg",
+  "thumbnail": "images/projects/thumbs/early-works-thumb.jpg"
+}

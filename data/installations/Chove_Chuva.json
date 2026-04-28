@@ -1,0 +1,14 @@
+{
+  "id": "chove-chuva",
+  "title": "Chove Chuva",
+  "date": "2016",
+  "collaboration": "Cildo Meireles",
+  "description": "Technical direction for video/aquatic installation.",
+  "longDescription": "Arduino actuated electro-vans for pseudo rain / OpenFrameworks video player / Kinect presence tracking.",
+  "technologies": ["OpenFrameworks", "Arduino", "Kinect"],
+  "links": {
+    "blog": "https://www.galleriacontinua.com/artists/cildo-meireles-47"
+  },
+  "image": "images/projects/chove-chuva.jpg",
+  "thumbnail": "images/projects/thumbs/chove-chuva-thumb.jpg"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "oscillatory-motion",
+  "title": "Oscillatory Motion",
+  "date": "2021",
+  "collaboration": "Beatrijs Albers and Reggy Timmermans",
+  "description": "Interactive installation with three custom-built robots.",
+  "longDescription": "Design of three robots' structures, drive trains and various other components using OpenSCAD / Structural parts machining on a CNC using Fusion360 / Drive train and other parts design and 3d printing / E-bike like lithium battery pack custom design / Motor control and sensor data collection using two Arduinos / Sensors' data interpretation, path planning and sound playback in MaxMSP running on a miniPC on each robot.",
+  "technologies": ["OpenSCAD", "Fusion360", "Arduino", "MaxMSP", "miniPC", "CNC"],
+  "links": {
+    "blog": "https://index.nadine.be/oscillatory-motion/"
+  },
+  "image": "images/projects/oscillatory-motion.jpg",
+  "thumbnail": "images/projects/thumbs/oscillatory-motion-thumb.jpg"
+}

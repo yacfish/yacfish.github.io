@@ -1,0 +1,14 @@
+{
+  "id": "cycloramodrome",
+  "title": "CycloRamaDrome",
+  "date": "2013",
+  "collaboration": "Alexandra Dementieva",
+  "description": "360° interactive video installation.",
+  "longDescription": "Software in MaxMSP duplicating and animating treadmill clips / Kinect tracking / MadMapper edge blending.",
+  "technologies": ["MaxMSP", "Kinect", "MadMapper"],
+  "links": {
+    "youtube": "https://www.youtube.com/watch?v=4tIG63eDiDo"
+  },
+  "image": "images/projects/cycloramodrome.jpg",
+  "thumbnail": "images/projects/thumbs/cycloramodrome-thumb.jpg"
+}

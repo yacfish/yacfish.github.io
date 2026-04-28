@@ -1,0 +1,14 @@
+{
+  "id": "perfectiøn",
+  "title": "Perfectiøn",
+  "date": "2014",
+  "collaboration": "Bud Blumenthal",
+  "description": "Realtime silhouette lighting and video effects.",
+  "longDescription": "Two Kinects + two projectors / Silhouette extraction and matching in MadMapper / Realtime video effects in MaxMSP-Jitter.",
+  "technologies": ["MaxMSP", "Jitter", "Kinect", "MadMapper"],
+  "links": {
+    "vimeo": "https://vimeo.com/110996131"
+  },
+  "image": "images/projects/perfectiøn.jpg",
+  "thumbnail": "images/projects/thumbs/perfectiøn-thumb.jpg"
+}

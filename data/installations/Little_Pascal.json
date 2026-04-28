@@ -1,0 +1,14 @@
+{
+  "id": "little-pascal",
+  "title": "Little Pascal",
+  "date": "2011",
+  "collaboration": "Iris Musel, Lola Maury, Nada Sabet, Eric Samothrakis and Ashley Charles",
+  "description": "Series of interactive installations.",
+  "longDescription": "Software development in MaxMSP for multiple interactive installations.",
+  "technologies": ["MaxMSP"],
+  "links": {
+    "blog": "https://legacy.imal.org/en/activity/little-pascal"
+  },
+  "image": "images/projects/little-pascal.jpg",
+  "thumbnail": "images/projects/thumbs/little-pascal-thumb.jpg"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "inland-wonderland",
+  "title": "Inland Wonderland",
+  "date": "2021",
+  "collaboration": "Alexandra Dementieva",
+  "description": "Interactive sculpture with accelerometer-driven 2D animation.",
+  "longDescription": "Dedicated software developed in Godot game engine / Accelerometer data collection with an Arduino / Interactive 2d animation loop using sensor data.",
+  "technologies": ["Godot", "Arduino"],
+  "links": {
+    "blog": "https://alexdementieva.org/installationpages/i_inland_wonderland.html"
+  },
+  "image": "images/projects/inland-wonderland.jpg",
+  "thumbnail": "images/projects/thumbs/inland-wonderland-thumb.jpg"
+}

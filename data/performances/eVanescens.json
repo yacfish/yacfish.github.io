@@ -1,0 +1,14 @@
+{
+  "id": "evanescens",
+  "title": "eVanescens",
+  "date": "2012",
+  "collaboration": "Todor Todoroff & Laura Colmenares Guerra",
+  "description": "Multi-media performance with dynamic data routing.",
+  "longDescription": "Software in MaxMSP-Jitter / Dynamic data stream routing / Mapping from audio analysis and MIDI to video triggers and effects.",
+  "technologies": ["MaxMSP", "Jitter"],
+  "links": {
+    "youtube": "https://www.youtube.com/watch?v=1X9haRegWJo"
+  },
+  "image": "images/projects/evanescens.jpg",
+  "thumbnail": "images/projects/thumbs/evanescens-thumb.jpg"
+}

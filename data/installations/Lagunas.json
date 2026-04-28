@@ -1,0 +1,14 @@
+{
+  "id": "lagunas",
+  "title": "Lagunas",
+  "date": "2017",
+  "collaboration": "Laura Colmenares Guerra",
+  "description": "Interactive video installation with parametric sequencer.",
+  "longDescription": "Parametric video sequencer in MaxMSP-Jitter controlling three vertical displays / Arduino shield and C programming for IR sensors / GLSL Pixel Shader development.",
+  "technologies": ["MaxMSP", "Jitter", "Arduino", "GLSL"],
+  "links": {
+    "blog": "https://ulara.org/selected-work/lagunas"
+  },
+  "image": "images/projects/lagunas.jpg",
+  "thumbnail": "images/projects/thumbs/lagunas-thumb.jpg"
+}
