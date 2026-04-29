@@ -1,7 +1,7 @@
 const DATA_BASE = 'projects/';
 
 async function loadManifest() {
-  const res = await fetch('data/manifest.json');
+  const res = await fetch(`${DATA_BASE}manifest.json`);
   return await res.json();
 }
 
@@ -9,9 +9,9 @@ async function loadProject(category, slug) {
   const res = await fetch(`${DATA_BASE}${category}/${slug}/data.json`);
   const data = await res.json();
   
-  // Auto-detect image file in the same folder
-  const imageExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.webp'];
-  for (const ext of imageExtensions) {
+  // Auto-detect image
+  const exts = ['.jpg', '.jpeg', '.png', '.gif', '.webp'];
+  for (const ext of exts) {
     try {
       const imgRes = await fetch(`${DATA_BASE}${category}/${slug}/image${ext}`);
       if (imgRes.ok) {
@@ -20,7 +20,6 @@ async function loadProject(category, slug) {
       }
     } catch(e) {}
   }
-  
   return data;
 }
 
@@ -58,7 +57,6 @@ async function renderProjects(containerId, category, limit = null) {
   container.innerHTML = html;
 }
 
-// Auto-load on page ready
 document.addEventListener('DOMContentLoaded', () => {
   renderProjects('featured-installations', 'installations', 3);
   renderProjects('featured-performances', 'performances', 3);
