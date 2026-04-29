@@ -1,0 +1,13 @@
+{
+  "id": "les-yeux-dargos",
+  "title": "Les Yeux d'Argos",
+  "date": "2014",
+  "collaboration": "Online Dance Performance by Selma and Soufiane Ouissi",
+  "description": "Software suite developed in MaxMSP-Jitter to allow two dancers to perform together from remote locations \n                            / Linux icecast server setup\n                        \t/ Editable cues for playback triggers & smooth transitions\n                        \t/ The result of the performance is only visible online",
+  "longDescription": "Software suite developed in MaxMSP-Jitter to allow two dancers to perform together from remote locations \n                            / Linux icecast server setup\n                        \t/ Editable cues for playback triggers & smooth transitions\n                        \t/ The result of the performance is only visible online",
+  "technologies": [],
+  "links": {
+    "youtube": "https://www.youtube.com/watch?v=rgWIuvyxOuY&t=1s"
+  },
+  "image": "images/projects/argos.jpg"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "fragments#43-44",
+  "title": "Fragments#43-44",
+  "date": "2012",
+  "collaboration": "Multi-media performance by Gauthier Keyaerts in collaboration with François Zajega",
+  "description": "Software development in MaxMSP\n\t                        / 25 channels audio player outputting a sound spatialization onto up to 8 speakers\n\t                        / A Kinect gathers the performer's position on stage and his gestures.\n\t                        / The position mapped onto a 5x5 grid is used to assign the gesture commands to audio effects and filters on the corresponding channels\n\t                        / A gesture also controls loading the next scene with to the next set of 25 soundfiles",
+  "longDescription": "Software development in MaxMSP\n\t                        / 25 channels audio player outputting a sound spatialization onto up to 8 speakers\n\t                        / A Kinect gathers the performer's position on stage and his gestures.\n\t                        / The position mapped onto a 5x5 grid is used to assign the gesture commands to audio effects and filters on the corresponding channels\n\t                        / A gesture also controls loading the next scene with to the next set of 25 soundfiles",
+  "technologies": [],
+  "links": {
+    "blog": "https://gauthierkeyaerts.com/blog/fragments-43-44/"
+  },
+  "image": "images/projects/frag.jpg"
+}

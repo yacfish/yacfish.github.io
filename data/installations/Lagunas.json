@@ -2,13 +2,12 @@
   "id": "lagunas",
   "title": "Lagunas",
   "date": "2017",
-  "collaboration": "Laura Colmenares Guerra",
-  "description": "Interactive video installation with parametric sequencer.",
-  "longDescription": "Parametric video sequencer in MaxMSP-Jitter controlling three vertical displays / Arduino shield and C programming for IR sensors / GLSL Pixel Shader development.",
-  "technologies": ["MaxMSP", "Jitter", "Arduino", "GLSL"],
+  "collaboration": "Interactive video installation by Laura Colmenaress Guerra",
+  "description": "Parametric video sequencer in MaxMSP-Jitter controlling three vertical displays\n                            / Arduino shield design and C programing to gather IR sensors' data to measure the rotation of three levers for the users to interact with\n                            / Timeline-based UI designed in JS within MaxMSP-Jitter to edit complex sequences \n                            / GLSL Pixel Shader development\n                            / Dynamic assignment of users' input to control Video Players & Pixel Shader\n                            / Interactive Scenario with multiple developments and endings",
+  "longDescription": "Parametric video sequencer in MaxMSP-Jitter controlling three vertical displays\n                            / Arduino shield design and C programing to gather IR sensors' data to measure the rotation of three levers for the users to interact with\n                            / Timeline-based UI designed in JS within MaxMSP-Jitter to edit complex sequences \n                            / GLSL Pixel Shader development\n                            / Dynamic assignment of users' input to control Video Players & Pixel Shader\n                            / Interactive Scenario with multiple developments and endings",
+  "technologies": [],
   "links": {
     "blog": "https://ulara.org/selected-work/lagunas"
   },
-  "image": "images/projects/lagunas.jpg",
-  "thumbnail": "images/projects/thumbs/lagunas-thumb.jpg"
+  "image": "images/projects/lagunas.jpg"
 }

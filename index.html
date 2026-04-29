@@ -6,45 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable = yes">
     <title>Yacine Sebti's Portfolio</title>
-	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <script src="js/projects.js" defer></script>
 </head>
 
 <body>
     <div id="mobile-menu-open" class="shadow-large">
         <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
-    <!-- End #mobile-menu-toggle -->
+
     <header>
         <div id="mobile-menu-close">
             <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
         </div>
         <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <!-- <li>
-                <a href="#experience">Experience</a>
-            </li> -->
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </header>
-    <!-- End header -->
 
     <div id="lead">
         <div id="lead-content">
@@ -52,34 +39,18 @@
             <h2>Visual Artist</h2>
             <div class="social2">
                 <ul>
-                    <li>
-                        <a href="https://github.com/yacfish" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                    </li> 
-                    <li>
-                        <a href="https://twitter.com/yacine_sebti" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/yacine-sebti-b3a06327/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                    
-                    </li>
-                    
+                    <li><a href="https://github.com/yacfish" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/yacine_sebti" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/yacine-sebti-b3a06327/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
-           
-        <a href="#contact-title" class="btn-rounded-white">Message...</a>
+            <a href="#contact-title" class="btn-rounded-white">Message...</a>
         </div>
-        <!-- End #lead-content -->
-
         <div id="lead-overlay"></div>
-
         <div id="lead-down">
-            <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
+            <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
         </div>
-        <!-- End #lead-down -->
     </div>
-    <!-- End #lead -->
 
     <div id="about">
         <div class="container">
@@ -88,265 +59,80 @@
                     <h2 class="heading shadow-pop-tr">About</h2>
                 </div>
                 <div class="col-md-10">
-                    <p>
-                        Professional with over 20 years of experience in Projection, Interactive Video Installations and Live Video Performances. Veteran projectionist who combined a love of programing and film to create environments where real time video processing is central. Frequently collaborates with other artists tackling new technical challenges by creating dedicated systems and software suites to fulfill the specific needs of each project.
-                    </p>
+                    <p>Professional with over 20 years of experience in Projection, Interactive Video Installations and Live Video Performances. Veteran projectionist who combined a love of programing and film to create environments where real time video processing is central. Frequently collaborates with other artists tackling new technical challenges by creating dedicated systems and software suites to fulfill the specific needs of each project.</p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End #about -->
 
-
-   
+    <!-- ==================== PROJECTS SECTION (DYNAMIC) ==================== -->
     <div id="projects" class="background-alt">
-        <br id="installations">     
+        <br id="installations">
         <h2 class="heading shadow-pop-tr">Interactive Installations</h2>
         <div class="container">
             <div class="row">
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/p_oscillatory.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Oscillatory Motion - 2021</h3>
-                        <p>
-                            Interactive installation by Beatrijs Albers and Reggy Timmermans
-                        </p>
-                        <p>
-                            Design of three robots' structures, drive trains and various other components using OpenSCAD
-	                        / Structural parts machining on a CNC using Fusion360 at FabLAB iMAL
-	                        / Drive train and other parts design and 3d printing
-                            / E-bike like lithium battery pack custom design using 18650 spot-welded and a BMS
-	                        / Motor control and sensor data collection using two Arduinos on each robot
-	                        / Sensors' data interpretation path planning and sound playback in MaxMSP runing on a miniPC on each robot
-                        </p>
-                        <a href="https://index.nadine.be/oscillatory-motion/" target="_blank">Blogpost</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-               <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/p_locust.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Locusts / paperRain - 2021</h3>
-                        <p>
-                            Interactive installation in collaboration with George Van Dam and "Various Artists"
-                        </p>
-                        <p>
-                           Dedicated Audio-Video player developed in MaxMSP 
-                            / Interpretation of the output of 8 music boxes via piezzos microphones
-                            / Interactive playback of an "explosive video sequence" and a quadraphonic soundtrack
-                        </p>
-                        <a href="https://various-artists-0v2g.squarespace.com/locusts" target="_blank">Blogpost</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/p_inland.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Inland Wonderland - 2021</h3>
-                        <p>
-                            Interactive sculpture by Alexandra Dementieva
-                        </p>
-                        <p>
-                            Dedicated software developed in Godot game engine
-	                        / Accelerometer data collection with an Arduino
-	                        /  Interactive 2d animation loop for the two screens within the sculpture using the sensor data as input to influence the scenario
-                        </p>
-                        <a href="https://alexdementieva.org/installationpages/i_inland_wonderland.html" target="_blank">Blogpost</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <a href="interactive-installations.html#3rd" class="btn-rounded-white">More...</a>
+                <div id="featured-installations" class="projects-grid"></div>
             </div>
-            <br><br id="performances" > 
+            <a href="interactive-installations.html" class="btn-rounded-white">More...</a>
         </div>
-            
+
+        <br><br id="performances">
         <h2 class="heading shadow-pop-tr">Live Performances</h2>
         <div class="container">
             <div class="row">
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/p_savethelast.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Save the Last Trance for Me - 2018</h3>
-                        <p>
-                            Audio visual performance under the direction of Matthaei & Konsorten
-                        </p>
-                        <p>
-                            Dedicated video player in MaxMSP/Jitter and Ableton LIVE
-	                        / Editable cues for playback triggers & smooth transitions
-	                        / Editable video effect chains using pixel shaders inside MaxForLive modules
-	                        / Kinect tracking a lamp torch and mapping of its position to the screens to reveal or hide live video clips
-                        </p>
-                        <a href="https://vimeo.com/297064485" target="_blank">Vimeo</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                 <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/p_ubique.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>UBIQUE - 2016</h3>
-                        <p>
-                             Ciné-Concert with the band Ethnophonics under the direction of Singkhéo Panya
-                        </p>
-                        <p>
-                            Dedicated multichannel video player in MaxMSP/Jitter and Ableton LIVE
-	                        / Editable cues for playback triggers & smooth transitions
-	                        / Editable video effect chains using pixel shaders inside MaxForLive modules
-	                        / Fast video sampling in MaxForLive for playback from a percussive MIDI controller
-
-                        </p>
-                        <a href="https://www.youtube.com/watch?v=pQWGtWnpyrQ" target="_blank">Youtube</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                 <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/p_infinite.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Infinite Journey/ In This Together… - 2015</h3>
-                        <p>
-                            Dance performance by Eveline Van Bauwel
-                        </p>
-                        <p>
-                            Software developed in OpenFrameworks to create interactive color compositions and realtime effects that are the sole scenic element on stage
-	                        / The colors pallets used are gathered in real time by a Kinect scanning the dancers' cloth vertically
-	                        / MadMapper and video projection merging is used to seamlessly link the two projectors that cover the ulltra-wide screen
-                        </p>
-                        <a href=" https://evelinevanbauwel.wordpress.com/2016/02/03/soon-more/" target="_blank">Blogpost</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
+                <div id="featured-performances" class="projects-grid"></div>
             </div>
-            <a href="live-performances.html#3rd" class="btn-rounded-white">More...</a>
-                
+            <a href="live-performances.html" class="btn-rounded-white">More...</a>
         </div>
-        
-        </br></br>
     </div>
-
     <!-- End #projects -->
 
     <div id="skills">
         <h2 class="heading shadow-pop-tr">Skills</h2>
+        <!-- Your original skills content remains unchanged -->
         <ul id="skill-prog" class="skill_title">
-            <li>MaxMSP</li>
-            <li>Jitter</li>
-            <li>SoftVNS</li>
-            <li>Pixel Shaders</li>
-            <li>OpenFrameworks</li>
-            <li>C</li>
-            <li>C++</li>
-            <li>Godot</li>
-            <li>GDscript</li>
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Node.js</li>
-            <li>Python</li>
-            <li>Proce55ing</li>
-            <li>Mathematica</li>
-            <li>Adobe Director Lingo</li>
+            <li>MaxMSP</li><li>Jitter</li><li>SoftVNS</li><li>Pixel Shaders</li><li>OpenFrameworks</li><li>C</li><li>C++</li><li>Godot</li><li>GDscript</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>Node.js</li><li>Python</li><li>Proce55ing</li><li>Mathematica</li><li>Adobe Director Lingo</li>
         </ul>
         <br/>
         <ul id="skill-3d" class="skill_title">
-            <li>OpenSCAD</li>
-            <li>Fusion360</li>
-            <li>Blender</li>
+            <li>OpenSCAD</li><li>Fusion360</li><li>Blender</li>
         </ul>
         <br/>
-         <ul id="skill-pc" class="skill_title">
-            <li>Windows</li>
-            <li>OSX</li>
-            <li>Linux</li>
-            <li>Servers</li>
-            <li>Networks</li>
-            <li>Firewalls</li>
-            <li>TCP</li>
-            <li>UDP</li>
-            <li>OSC</li>
-            <li>Sockets</l>
-            <li>Media Streaming</li>
+        <ul id="skill-pc" class="skill_title">
+            <li>Windows</li><li>OSX</li><li>Linux</li><li>Servers</li><li>Networks</li><li>Firewalls</li><li>TCP</li><li>UDP</li><li>OSC</li><li>Sockets</li><li>Media Streaming</li>
         </ul>
         <br/>
-         <ul id="skill-video" class="skill_title">
-            <li>BlackMagic Digitizers</li>
-            <li>SDI Cameras</li>
-            <li>Volumetric Cameras</li>
+        <ul id="skill-video" class="skill_title">
+            <li>BlackMagic Digitizers</li><li>SDI Cameras</li><li>Volumetric Cameras</li>
         </ul>
         <br/>
         <ul id="skill-elec" class="skill_title">
-            <li>Arduino</li>
-            <li>ESP32</li>
-            <li>Raspberry Pi</li>
-            <li>PCB Design</li>
-            <li>CNC Machining</li>
-            <li>Additive Manufacturing</li>
-            <li>Custom Lithiun Battery pack design</li>
+            <li>Arduino</li><li>ESP32</li><li>Raspberry Pi</li><li>PCB Design</li><li>CNC Machining</li><li>Additive Manufacturing</li><li>Custom Lithium Battery pack design</li>
         </ul>
     </div>
-    <!-- End #skills -->
-     <div id="education">
+
+    <div id="education">
         <h2 class="heading shadow-pop-tr">Education</h2>
+        <!-- Your original education content remains unchanged -->
         <div class="education-block">
             <h3>iMAL</h3>
             <span class="education-date">2003 - 2007</span>
             <h4>Arts Center focused on Interactive Mixed Media Art</h4>
-            <ul>Completed countless workshops and courses in </br>
-                MaxMSP - Jitter - SoftVNS - Proce55ing - OpenFrameworks
-            </ul>
+            <ul>Completed countless workshops and courses in </br>MaxMSP - Jitter - SoftVNS - Proce55ing - OpenFrameworks</ul>
         </div>
-
         <div class="education-block">
             <h3>Mentorship</h3>
             <span class="education-date">2001 - 2002</span>
             <h4>Studying under the mentorship of Artist Pascal Baes</h4>
-            <ul>
-                Film Animation - Mathematica - Adobe Director Lingo
-            </ul>
+            <ul>Film Animation - Mathematica - Adobe Director Lingo</ul>
         </div>
-
         <div class="education-block">
             <h3>ERG</h3>
             <span class="education-date">1999 - 2000</span>
             <h4>Arts Academy</h4>
-            <ul>
-                Completed classes in </br> 
-                Fine Art Practice, Classical Drawing, Narration, Animation and Video Editing
-            </ul>
+            <ul>Completed classes in </br>Fine Art Practice, Classical Drawing, Narration, Animation and Video Editing</ul>
         </div>
-        <!-- End .education-block -->
-        </br></br></br></br>
     </div>
-    <!-- End #education -->
 
     <div id="contact">
         <h2 id="contact-title">Get in Touch</h2>
@@ -358,80 +144,38 @@
                 <button type="submit">Send</button>
             </form>
         </div>
-        <!-- End #contact-form -->
-        
     </div>
-    <!-- End #contact -->
 
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-sm-5 copyright">
-                    <p>
-                        2022 &copy;  Yacine Sebti
-                    </p>
+                    <p>2022 © Yacine Sebti</p>
                 </div>
                 <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
+                    <span id="to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>
                 </div>
                 <div class="col-sm-5 social">
                     <ul>
-                        <!-- <li>
-                            <a href="https://github.com/https://github.com/yacfish" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="linkedin.com/in/yacine-sebti-b3a06327" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li> 
-                        <li>
-                            <a href="https://twitter.com/yacine_sebti" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                        </li> -->
-                        <li>
-                            <a href="https://github.com/yacfish" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li> 
-                        <li>
-                            <a href="https://twitter.com/yacine_sebti" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/yacine-sebti-b3a06327/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
+                        <li><a href="https://github.com/yacfish" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                        <li><a href="https://twitter.com/yacine_sebti" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/yacine-sebti-b3a06327/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
-    <!-- End footer -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
 
-    <!-- Default Statcounter code for portfolio
-    https://yacfish.github.io/ -->
+    <!-- Statcounter -->
     <script type="text/javascript">
     var sc_project=12745803; 
     var sc_invisible=1; 
     var sc_security="6715cac4"; 
     </script>
-    <script type="text/javascript"
-    src="https://www.statcounter.com/counter/counter.js"
-    async></script>
-    <noscript><div class="statcounter"><a title="Web Analytics"
-    href="https://statcounter.com/" target="_blank"><img
-    class="statcounter"
-    src="https://c.statcounter.com/12745803/0/6715cac4/1/"
-    alt="Web Analytics"
-    referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-    <!-- End of Statcounter Code -->
+    <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+    <noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/12745803/0/6715cac4/1/" alt="Web Analytics" referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 </body>
-
 </html>

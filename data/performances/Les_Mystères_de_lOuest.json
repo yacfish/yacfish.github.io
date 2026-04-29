@@ -1,0 +1,13 @@
+{
+  "id": "les-mystères-de-louest",
+  "title": "Les Mystères de l'Ouest",
+  "date": "2012",
+  "collaboration": "\"Ciné-Concert\" directed by Singkheo Panya",
+  "description": "Dedicated video player developed in MaxMSP-Jitter\n\t                        / Cued playback triggers & smooth transitions\n\t                        / Mapping module to conform to varying projection angles",
+  "longDescription": "Dedicated video player developed in MaxMSP-Jitter\n\t                        / Cued playback triggers & smooth transitions\n\t                        / Mapping module to conform to varying projection angles",
+  "technologies": [],
+  "links": {
+    "youtube": "https://www.youtube.com/watch?v=HKbWgTUTy7A&t=1s"
+  },
+  "image": "images/projects/mysteres.jpg"
+}
