@@ -1,0 +1,10 @@
+{
+  "title": "Infinite Journey/ In This Together…",
+  "date": "2015",
+  "collaboration": "Dance performance by Eveline Van Bauwel",
+  "description": "Software developed in OpenFrameworks to create interactive color compositions and realtime effects that are the sole scenic element on stage\n\t                        / The colors pallets used are gathered in real time by a Kinect scanning the dancers' cloth vertically\n\t                        / MadMapper and video projection merging is used to seamlessly link the two projectors that cover the ulltra-wide screen",
+  "technologies": [],
+  "links": {
+    "blog": "https://evelinevanbauwel.wordpress.com/2016/02/03/soon-more/"
+  }
+}

@@ -1,13 +1,27 @@
-const DATA_BASE = 'data/';
+const DATA_BASE = 'projects/';
 
 async function loadManifest() {
-  const res = await fetch(`${DATA_BASE}manifest.json`);
+  const res = await fetch('data/manifest.json');
   return await res.json();
 }
 
-async function loadProject(category, filename) {
-  const res = await fetch(`${DATA_BASE}${category}/${filename}.json`);
-  return await res.json();
+async function loadProject(category, slug) {
+  const res = await fetch(`${DATA_BASE}${category}/${slug}/data.json`);
+  const data = await res.json();
+  
+  // Auto-detect image file in the same folder
+  const imageExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.webp'];
+  for (const ext of imageExtensions) {
+    try {
+      const imgRes = await fetch(`${DATA_BASE}${category}/${slug}/image${ext}`);
+      if (imgRes.ok) {
+        data.image = `${DATA_BASE}${category}/${slug}/image${ext}`;
+        break;
+      }
+    } catch(e) {}
+  }
+  
+  return data;
 }
 
 async function renderProjects(containerId, category, limit = null) {
@@ -20,8 +34,8 @@ async function renderProjects(containerId, category, limit = null) {
 
   let html = '';
 
-  for (const filename of projectsToShow) {
-    const p = await loadProject(category, filename);
+  for (const slug of projectsToShow) {
+    const p = await loadProject(category, slug);
     if (!p) continue;
 
     const collabLine = p.collaboration ? `<p>${p.collaboration}</p>` : '';
@@ -29,7 +43,7 @@ async function renderProjects(containerId, category, limit = null) {
     html += `
       <div class="project shadow-large">
         <div class="project-image">
-          <img src="${p.image}" alt="${p.title}" />
+          <img src="${p.image || ''}" alt="${p.title}" />
         </div>
         <div class="project-info">
           <h3>${p.title} - ${p.date}</h3>
@@ -44,20 +58,10 @@ async function renderProjects(containerId, category, limit = null) {
   container.innerHTML = html;
 }
 
-// For homepage (featured only)
+// Auto-load on page ready
 document.addEventListener('DOMContentLoaded', () => {
-  if (document.getElementById('featured-installations')) {
-    renderProjects('featured-installations', 'installations', 3);
-  }
-  if (document.getElementById('featured-performances')) {
-    renderProjects('featured-performances', 'performances', 3);
-  }
-
-  // For full pages
-  if (document.getElementById('all-installations')) {
-    renderProjects('all-installations', 'installations');
-  }
-  if (document.getElementById('all-performances')) {
-    renderProjects('all-performances', 'performances');
-  }
+  renderProjects('featured-installations', 'installations', 3);
+  renderProjects('featured-performances', 'performances', 3);
+  if (document.getElementById('all-installations')) renderProjects('all-installations', 'installations');
+  if (document.getElementById('all-performances')) renderProjects('all-performances', 'performances');
 });

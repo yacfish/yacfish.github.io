@@ -1,0 +1,10 @@
+{
+  "title": "Perfectiøn",
+  "date": "2014",
+  "collaboration": "Dance performance by Bud Blumenthal",
+  "description": "Real time white silhouette lighting following the performer on stage\n\t                        / Two Kinect and two video projectors facing down onto the stage are matched to cover the same surface\n                            / The Kinects volumetric image are processed to extract the silhouette of the dancer and erase the background\n                            / More matching is done in MadMapper to precisely match the silhouette with the dancer\n\t                        / Real time video effects controlled live through a midi controller in MaxMSP-Jitter",
+  "technologies": [],
+  "links": {
+    "vimeo": "https://vimeo.com/110996131"
+  }
+}

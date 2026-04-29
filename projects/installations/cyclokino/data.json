@@ -1,0 +1,10 @@
+{
+  "title": "CycloKino",
+  "date": "2012",
+  "collaboration": "Installation by Fred Chemama and Bettina Kussel",
+  "description": "Software development in MaxMSP and Arduino /  Multiple stationary bicycles are equipped with sensors and there for the visitors to use / their efforts on the bikes are linked to 2D animations on the projection screen",
+  "technologies": [],
+  "links": {
+    "youtube": "https://www.youtube.com/watch?v=zUDOoZthH4E"
+  }
+}

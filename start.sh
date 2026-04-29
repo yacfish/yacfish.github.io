@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "🔄 Updating manifest.json from current JSON files..."
+echo "🔄 Regenerating manifest from projects/ folder structure..."
 python3 generate_manifest.py
 
 echo ""

@@ -1,0 +1,10 @@
+{
+  "title": "Inland Wonderland",
+  "date": "2021",
+  "collaboration": "Interactive sculpture by Alexandra Dementieva",
+  "description": "Dedicated software developed in Godot game engine\n\t                        / Accelerometer data collection with an Arduino\n\t                        / Interactive 2d animation loop for the two screens within the sculpture using the sensor data as input to influence the scenario",
+  "technologies": [],
+  "links": {
+    "blog": "https://alexdementieva.org/installationpages/i_inland_wonderland.html"
+  }
+}

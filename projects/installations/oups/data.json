@@ -1,0 +1,10 @@
+{
+  "title": "Oups!",
+  "date": "2007",
+  "collaboration": "Interactive video installation by Marcio Ambrosio",
+  "description": "Dedicated software developed in MaxMSP-Jitter\n                            / Motion tracking techniques are used to analyze different aspects of the detected visitor's silhouette\n\t                        / The engine allows Marcio to add a scene by feeding it a folder with named animation clips with alpha and sound files.\n\t                        / A naming convention allows him to place the image in the foreground or background \n\t                        / It's also possible to attach the images to several anchor points on the detected visitor (eg center of mass - head - feet)",
+  "technologies": [],
+  "links": {
+    "vimeo": " https://vimeo.com/3208200"
+  }
+}

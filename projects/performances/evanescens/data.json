@@ -1,0 +1,10 @@
+{
+  "title": "eVanescens",
+  "date": "2012",
+  "collaboration": "Multi-media performance by Todor Todoroff & Laura Colmenares Guerra",
+  "description": "Software development in MaxMSP-Jitter\n\t                        / Cued playback triggers & smooth transitions\n\t                        / System for dynamic data stream routing\n                            / Mapping from audio analysis and MIDI controller to video playback triggers and effects parameters",
+  "technologies": [],
+  "links": {
+    "youtube": "https://www.youtube.com/watch?v=1X9haRegWJo"
+  }
+}
