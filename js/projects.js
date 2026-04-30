@@ -51,7 +51,7 @@ async function renderProjects(containerId, category, limit = null) {
           ${collabLine}
           <p>${p.description}</p>
           ${p.links && Object.keys(p.links).length ? 
-            `<a href="${Object.values(p.links)[0]}" target="_blank">${Object.keys(p.links)[0] === 'blog' ? 'Blogpost' : Object.keys(p.links)[0]}</a>` : ''}
+            `<a href="${Object.values(p.links)[0]}" target="_blank">${Object.keys(p.links)[0] === 'blog' ? 'blogpost' : Object.keys(p.links)[0]}</a>` : ''}
         </div>
       </div>`;
   }
