@@ -9,7 +9,6 @@ async function loadProject(category, slug) {
   const res = await fetch(`${DATA_BASE}${category}/${slug}/data.json`);
   const data = await res.json();
   
-  // Auto-detect image
   const exts = ['.jpg', '.jpeg', '.png', '.gif', '.webp'];
   for (const ext of exts) {
     try {
@@ -25,10 +24,19 @@ async function loadProject(category, slug) {
 
 async function renderProjects(containerId, category, limit = null) {
   const container = document.getElementById(containerId);
-  if (!container) return;
+  if (!container) {
+    console.warn(`Container ${containerId} not found`);
+    return;
+  }
 
   const manifest = await loadManifest();
-  const list = manifest[category] || [];
+  const catData = manifest[category];
+  if (!catData || !catData.projects) {
+    console.warn(`No projects found for category ${category}`);
+    return;
+  }
+
+  const list = catData.projects;
   const projectsToShow = limit ? list.slice(0, limit) : list;
 
   let html = '';
@@ -54,12 +62,49 @@ async function renderProjects(containerId, category, limit = null) {
       </div>`;
   }
 
-  container.innerHTML = html;
+  container.innerHTML = html || '<p>No projects found.</p>';
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  renderProjects('featured-installations', 'installations', 3);
-  renderProjects('featured-performances', 'performances', 3);
-  if (document.getElementById('all-installations')) renderProjects('all-installations', 'installations');
-  if (document.getElementById('all-performances')) renderProjects('all-performances', 'performances');
+// Main logic - simplified and robust
+document.addEventListener('DOMContentLoaded', async () => {
+  console.log("✅ projects.js loaded");
+
+  const manifest = await loadManifest();
+  console.log("Manifest loaded:", manifest);
+
+  // HOMEPAGE
+  const dynamicContainer = document.getElementById('dynamic-sections');
+  if (dynamicContainer) {
+    console.log("Rendering homepage sections");
+    dynamicContainer.innerHTML = '';
+
+    for (const [category, catInfo] of Object.entries(manifest)) {
+      const sectionHTML = `
+        <h2 class="heading shadow-pop-tr">${catInfo.title}</h2>
+        <div class="container">
+          <div class="row">
+            <div id="featured-${category}"></div>
+          </div>
+          <a href="${category}.html" class="btn-rounded-white">More ${catInfo.title} →</a>
+        </div>`;
+      dynamicContainer.innerHTML += sectionHTML;
+      await renderProjects(`featured-${category}`, category, 3);
+    }
+  }
+
+  // FULL CATEGORY PAGE (e.g. gamedev.html)
+  const fullContainer = document.querySelector('div[id^="full-"]');
+  if (fullContainer) {
+    const category = fullContainer.id.replace('full-', '');
+    console.log(`Rendering full page for category: ${category}`);
+    
+    const catInfo = manifest[category];
+    if (catInfo) {
+      // Set title
+      const h2 = document.querySelector('h2.heading');
+      if (h2) h2.textContent = catInfo.title;
+
+      await renderProjects(fullContainer.id, category);   // show ALL projects
+    }
+  }
 });
