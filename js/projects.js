@@ -24,17 +24,11 @@ async function loadProject(category, slug) {
 
 async function renderProjects(containerId, category, limit = null) {
   const container = document.getElementById(containerId);
-  if (!container) {
-    console.warn(`Container ${containerId} not found`);
-    return;
-  }
+  if (!container) return;
 
   const manifest = await loadManifest();
   const catData = manifest[category];
-  if (!catData || !catData.projects) {
-    console.warn(`No projects found for category ${category}`);
-    return;
-  }
+  if (!catData || !catData.projects) return;
 
   const list = catData.projects;
   const projectsToShow = limit ? list.slice(0, limit) : list;
@@ -62,20 +56,16 @@ async function renderProjects(containerId, category, limit = null) {
       </div>`;
   }
 
-  container.innerHTML = html || '<p>No projects found.</p>';
+  container.innerHTML = html;
 }
 
-// Main logic - simplified and robust
+// Main logic
 document.addEventListener('DOMContentLoaded', async () => {
-  console.log("✅ projects.js loaded");
-
   const manifest = await loadManifest();
-  console.log("Manifest loaded:", manifest);
 
-  // HOMEPAGE
+  // HOMEPAGE - 3 featured per category
   const dynamicContainer = document.getElementById('dynamic-sections');
   if (dynamicContainer) {
-    console.log("Rendering homepage sections");
     dynamicContainer.innerHTML = '';
 
     for (const [category, catInfo] of Object.entries(manifest)) {
@@ -97,14 +87,21 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (fullContainer) {
     const category = fullContainer.id.replace('full-', '');
     console.log(`Rendering full page for category: ${category}`);
-    
-    const catInfo = manifest[category];
-    if (catInfo) {
-      // Set title
-      const h2 = document.querySelector('h2.heading');
-      if (h2) h2.textContent = catInfo.title;
 
-      await renderProjects(fullContainer.id, category);   // show ALL projects
+    const catInfo = manifest[category];
+    if (!catInfo) return;
+
+    // Set nice title + back button
+    fullContainer.innerHTML = `
+      <h2 class="heading shadow-pop-tr">${catInfo.title}</h2>
+      <div class="container">
+        <div class="row">
+          <div id="full-page-content"></div>
+        </div>
+        <a href="index.html" class="btn-rounded-white">← Back to Home</a>
+      </div>`;
+
+      await renderProjects("full-page-content", category);   // show ALL projects
     }
   }
-});
+);
