@@ -1,0 +1,12 @@
+{
+  "title": "Argus Modular",
+  "date": "2026",
+  "description": "High-performance modular real-time streaming framework: graph-based pipelines, hot-swappable nodes, typed multi-port dataflow, OpenGL ES 3 / Vulkan path, and Dear ImGui visual editor (argus-core + argus-modular).",
+  "technologies": [
+    "C++20",
+    "OpenGL ES",
+    "Vulkan",
+    "Dear ImGui"
+  ],
+  "links": {}
+}

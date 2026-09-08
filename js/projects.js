@@ -9,7 +9,7 @@ async function loadProject(category, slug) {
   const res = await fetch(`${DATA_BASE}${category}/${slug}/data.json`);
   const data = await res.json();
   
-  const exts = ['.jpg', '.jpeg', '.png', '.gif', '.webp'];
+  const exts = ['.jpg', '.jpeg', '.png', '.gif', '.webp', '.svg'];
   for (const ext of exts) {
     try {
       const imgRes = await fetch(`${DATA_BASE}${category}/${slug}/image${ext}`);
