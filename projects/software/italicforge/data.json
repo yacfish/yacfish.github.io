@@ -1,0 +1,9 @@
+{
+  "title": "ItalicForge",
+  "date": "2026",
+  "description": "Tool for font designers: generate editable italic UFO masters from upright sources (slant pipeline, UFO I/O, preview).",
+  "technologies": [
+    "Python"
+  ],
+  "links": {}
+}

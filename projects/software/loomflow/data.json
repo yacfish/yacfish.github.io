@@ -1,0 +1,14 @@
+{
+  "title": "LoomFlow",
+  "date": "2025–2026",
+  "description": "Turn photos into organic variable-width brush strokes for digital art and pen plotters. Structure-tensor direction fields, palette extraction, real-time preview. Exports image, video, SVG, and G-code. Universal app (iPhone, iPad, Mac).",
+  "technologies": [
+    "C++",
+    "OpenCV",
+    "Swift",
+    "Metal"
+  ],
+  "links": {
+    "github": "https://github.com/yacfish/loomflow-docs"
+  }
+}

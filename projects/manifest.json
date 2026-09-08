@@ -1,7 +1,16 @@
 {
+  "software": {
+    "title": "Software",
+    "order": 1,
+    "projects": [
+      "argus-modular",
+      "italicforge",
+      "loomflow"
+    ]
+  },
   "installations": {
     "title": "Interactive Installations",
-    "order": 1,
+    "order": 2,
     "projects": [
       "oscillatory-motion",
       "locusts-paper-rain",
@@ -23,7 +32,7 @@
   },
   "performances": {
     "title": "Live Performances",
-    "order": 2,
+    "order": 3,
     "projects": [
       "save-the-last-trance-for-me",
       "ubique",
@@ -39,8 +48,9 @@
   },
   "gamedev": {
     "title": "Game Development",
-    "order": 3,
+    "order": 4,
     "projects": [
+      "uju",
       "12i"
     ]
   }
