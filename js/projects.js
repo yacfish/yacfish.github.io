@@ -8,7 +8,12 @@ async function loadManifest() {
 async function loadProject(category, slug) {
   const res = await fetch(`${DATA_BASE}${category}/${slug}/data.json`);
   const data = await res.json();
-  
+
+  // Prefer absolute image URL from data.json (e.g. remote gallery asset)
+  if (typeof data.image === 'string' && /^https?:\/\//i.test(data.image)) {
+    return data;
+  }
+
   const exts = ['.jpg', '.jpeg', '.png', '.gif', '.webp', '.svg'];
   for (const ext of exts) {
     try {
