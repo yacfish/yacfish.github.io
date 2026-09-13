@@ -117,7 +117,8 @@ function updateProjImgs() {
     var po = parseInt(window.pageYOffset, 10);
     var ph = parseInt(window.innerHeight, 10);
     var pw = parseInt(window.innerWidth, 10);
-    var smallflag = pw <= 800;
+    // Phone portrait (<=800) or phone landscape (short viewport).
+    var smallflag = pw <= 800 || (ph <= 500 && pw > ph);
     var off = po + (ph - 300) / 2;
     // Desktop zoom strength unchanged (f=40). Mobile was f=120 + abssval+=3.5 (very tight crop);
     // ease phone zoom so more of each square thumb is visible in the taller 2:1 frame.
