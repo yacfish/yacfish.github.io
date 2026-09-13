@@ -869,14 +869,22 @@ footer{
     /* } */
     .project-image{
         position: sticky;
+        top: 0;
+        z-index: 1;
         object-fit: cover;
-        object-position: 0% 0%;  
-        width: 100%; 
-        height: 80px; 
-        max-width:100%;
-        max-height:300px;
-        overflow:hidden;
-        /* float:left */
+        object-position: 0% 0%;
+        width: 100%;
+        height: auto;
+        /* Was a flat 80px strip (~5:1). Use 2:1 so more of the square thumbs show. */
+        aspect-ratio: 2 / 1;
+        max-width: 100%;
+        max-height: none;
+        overflow: hidden;
+    }
+    .project-image img{
+        display: block;
+        height: auto;
+        max-width: none;
     }
     .project-info{
         position:relative;

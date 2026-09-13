@@ -62,6 +62,8 @@ async function renderProjects(containerId, category, limit = null) {
   }
 
   container.innerHTML = html;
+  // Project cards are injected async; re-run scroll/scale layout (desktop + phone).
+  if (typeof updateProjImgs === 'function') updateProjImgs();
 }
 
 // Main logic
