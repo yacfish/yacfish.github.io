@@ -2,9 +2,13 @@
   "title": "UJU",
   "date": "2025",
   "description": "3D puzzle game in Godot. Originally 2021; ported to Godot 4.4 and expanded with new levels.",
-  "technologies": ["Godot", "GDScript", "Python"],
+  "technologies": [
+    "Godot",
+    "GDScript",
+    "Python"
+  ],
   "links": {
-    "twitter": "https://x.com/UjuGame"
+    "x": "https://x.com/UjuGame"
   },
   "image": "https://pbs.twimg.com/media/E4REpRlWYAI8_yp.jpg?name=orig"
 }
