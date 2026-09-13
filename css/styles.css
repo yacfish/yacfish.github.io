@@ -336,6 +336,19 @@ footer{
     white-space:nowrap;
 }
 
+.icon-x{
+    display:inline-block;
+    width:1em;
+    height:1em;
+    vertical-align:-0.125em;
+    fill:currentColor;
+}
+.social2 .icon-x,
+.social .icon-x{
+    width:1em;
+    height:1em;
+}
+
 #lead-overlay{
     position:absolute;
     height:100%;
