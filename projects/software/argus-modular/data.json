@@ -8,5 +8,7 @@
     "Vulkan",
     "Dear ImGui"
   ],
-  "links": {}
+  "links": {
+    "github": "https://github.com/yacfish/argus-modular-docs"
+  }
 }
