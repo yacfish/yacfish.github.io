@@ -5,5 +5,7 @@
   "technologies": [
     "Python"
   ],
-  "links": {}
+  "links": {
+    "github": "https://github.com/yacfish/italic_forge-docs"
+  }
 }
