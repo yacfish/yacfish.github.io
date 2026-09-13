@@ -820,7 +820,40 @@ footer{
 }
 @media only screen and (max-width: 800px),
        only screen and (max-height: 500px) and (orientation: landscape){
-/* @media only screen and (max-width: 400px){ */
+/* 
+/* Project cards: stack image above text only below 535px.
+   Above that keep the horizontal (side image) layout even if other phone styles apply. */
+@media only screen and (max-width: 535px){
+    .project-image{
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        object-fit: cover;
+        object-position: 0% 0%;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 2 / 1;
+        max-width: 100%;
+        max-height: none;
+        overflow: hidden;
+    }
+    .project-image img{
+        display: block;
+        height: auto;
+        max-width: none;
+    }
+    .project-info{
+        position:relative;
+        margin:0;
+        padding:10px 15px;
+        top:auto;
+        transform:none
+    }
+    .project-info h3{
+        margin:0 0 0 0
+    }
+}
+@media only screen and (max-width: 400px){ */
     header{
         position:fixed;
         display:none;
@@ -895,38 +928,6 @@ footer{
     }
     .education-block h3,.education-block span{
         float:none
-    }
-    /* .project-image{ */
-        /* display:none */
-    /* } */
-    .project-image{
-        position: sticky;
-        top: 0;
-        z-index: 1;
-        object-fit: cover;
-        object-position: 0% 0%;
-        width: 100%;
-        height: auto;
-        /* Was a flat 80px strip (~5:1). Use 2:1 so more of the square thumbs show. */
-        aspect-ratio: 2 / 1;
-        max-width: 100%;
-        max-height: none;
-        overflow: hidden;
-    }
-    .project-image img{
-        display: block;
-        height: auto;
-        max-width: none;
-    }
-    .project-info{
-        position:relative;
-        margin:0;
-        padding:10px 15px;
-        top:auto;
-        transform:none
-    }
-    .project-info h3{
-        margin:0 0 0 0
     }
     footer{
         text-align:center
